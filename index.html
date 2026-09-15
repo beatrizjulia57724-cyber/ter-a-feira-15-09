@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação dos caracteres da página -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página se adaptar a celulares, tablets e computadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Texto que aparece na aba do navegador -->
+    <title>Destaques - Mitos e Verdades</title>
+
+    <!-- Liga o arquivo HTML ao arquivo de estilos CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho principal da página -->
+    <header>
+        <h1>Destaques: Mitos e Verdades</h1>
+        <p>
+            Vamos verificar algumas informações sobre a Honda CB 300F Twister.
+        </p>
+    </header>
+
+    <!-- Área principal do conteúdo -->
+    <main>
+
+        <!-- Seção que reúne os três destaques -->
+        <section class="destaques">
+
+            <!-- Primeiro cartão -->
+            <article class="card">
+
+                <!-- Título do cartão -->
+                <h2>🏍️ Compra da moto</h2>
+
+                <!-- Informação apresentada como mito -->
+                <p>
+                    <strong>Mito:</strong>
+                    "O preço de uma moto é sempre igual em qualquer lugar."
+                </p>
+
+                <!-- Botão que será usado pelo JavaScript -->
+                <button onclick="mostrarResposta(1)">
+                    Verificar informação
+                </button>
+
+                <!-- Resposta inicialmente escondida -->
+                <p id="resposta1" class="resposta">
+                    Verdadeiro cuidado: o preço pode variar conforme região,
+                    ano, versão, condições da moto, concessionária e negociação.
+                    É importante pesquisar antes da compra.
+                </p>
+
+            </article>
+
+
+            <!-- Segundo cartão -->
+            <article class="card">
+
+                <!-- Título do cartão -->
+                <h2>🅿️ Estacionamentos e feiras</h2>
+
+                <p>
+                    <strong>Mito:</strong>
+                    "Qualquer estacionamento ou feira oferece as mesmas
+                    condições para motociclistas."
+                </p>
+
+                <button onclick="mostrarResposta(2)">
+                    Verificar informação
+                </button>
+
+                <p id="resposta2" class="resposta">
+                    Cada estabelecimento ou evento pode ter regras,
+                    preços, horários e vagas diferentes. Antes de sair,
+                    é importante conferir as informações do local.
+                </p>
+
+            </article>
+
+
+            <!-- Terceiro cartão -->
+            <article class="card">
+
+                <!-- Título do cartão -->
+                <h2>💰 Economia</h2>
+
+                <p>
+                    <strong>Verdade:</strong>
+                    "Uma moto pode ter custos de uso menores que os de
+                    alguns automóveis."
+                </p>
+
+                <button onclick="mostrarResposta(3)">
+                    Verificar informação
+                </button>
+
+                <p id="resposta3" class="resposta">
+                    O consumo de combustível pode ser um dos fatores
+                    considerados na economia. Porém, também é necessário
+                    considerar manutenção, seguro, documentação, equipamentos
+                    de segurança e outros custos.
+                </p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>
+            Projeto educativo de verificação de fatos.
+        </p>
+    </footer>
+
+
+    <!-- Liga o arquivo JavaScript à página -->
+    <script src="script.js"></script>
+
+</body>
+</html>
